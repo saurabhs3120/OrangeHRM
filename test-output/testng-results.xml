@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-25T20:40:26 IST" name="Suite" finished-at="2024-12-25T20:41:20 IST" duration-ms="53643">
+    <groups>
+      <group name="pim">
+        <method signature="PIMPageTest.validateEmployeeInformation()[pri:3, instance:TestLayer.PIMPageTest@1d9b7cce]" name="validateEmployeeInformation" class="TestLayer.PIMPageTest"/>
+        <method signature="PIMPageTest.validateNewEmployee()[pri:2, instance:TestLayer.PIMPageTest@1d9b7cce]" name="validateNewEmployee" class="TestLayer.PIMPageTest"/>
+        <method signature="PIMPageTest.validatePimPage()[pri:1, instance:TestLayer.PIMPageTest@1d9b7cce]" name="validatePimPage" class="TestLayer.PIMPageTest"/>
+        <method signature="PIMPageTest.validateSearchFunctionality()[pri:4, instance:TestLayer.PIMPageTest@1d9b7cce]" name="validateSearchFunctionality" class="TestLayer.PIMPageTest"/>
+      </group> <!-- pim -->
+      <group name="RegressionTesting">
+        <method signature="LoginPageTest.setup()[pri:0, instance:TestLayer.LoginPageTest@7334aada]" name="setup" class="TestLayer.LoginPageTest"/>
+        <method signature="LoginPageTest.validateLoginFunctionality()[pri:0, instance:TestLayer.LoginPageTest@7334aada]" name="validateLoginFunctionality" class="TestLayer.LoginPageTest"/>
+        <method signature="HomePageTest.validateHomeTitle()[pri:2, instance:TestLayer.HomePageTest@384ad17b]" name="validateHomeTitle" class="TestLayer.HomePageTest"/>
+        <method signature="HomePageTest.validateHomeUrl()[pri:3, instance:TestLayer.HomePageTest@384ad17b]" name="validateHomeUrl" class="TestLayer.HomePageTest"/>
+        <method signature="HomePageTest.validateLogo()[pri:1, instance:TestLayer.HomePageTest@384ad17b]" name="validateLogo" class="TestLayer.HomePageTest"/>
+        <method signature="PIMPageTest.validateEmployeeInformation()[pri:3, instance:TestLayer.PIMPageTest@1d9b7cce]" name="validateEmployeeInformation" class="TestLayer.PIMPageTest"/>
+        <method signature="PIMPageTest.validateNewEmployee()[pri:2, instance:TestLayer.PIMPageTest@1d9b7cce]" name="validateNewEmployee" class="TestLayer.PIMPageTest"/>
+        <method signature="PIMPageTest.validatePimPage()[pri:1, instance:TestLayer.PIMPageTest@1d9b7cce]" name="validatePimPage" class="TestLayer.PIMPageTest"/>
+        <method signature="PIMPageTest.validateSearchFunctionality()[pri:4, instance:TestLayer.PIMPageTest@1d9b7cce]" name="validateSearchFunctionality" class="TestLayer.PIMPageTest"/>
+        <method signature="AdminPageTest.addUserCredentails()[pri:2, instance:TestLayer.AdminPageTest@20ce78ec]" name="addUserCredentails" class="TestLayer.AdminPageTest"/>
+        <method signature="AdminPageTest.logoutFunctionality()[pri:3, instance:TestLayer.AdminPageTest@20ce78ec]" name="logoutFunctionality" class="TestLayer.AdminPageTest"/>
+        <method signature="AdminPageTest.validateAdminPage()[pri:1, instance:TestLayer.AdminPageTest@20ce78ec]" name="validateAdminPage" class="TestLayer.AdminPageTest"/>
+        <method signature="AdminPageTest.validateLoginFunctionality()[pri:4, instance:TestLayer.AdminPageTest@20ce78ec]" name="validateLoginFunctionality" class="TestLayer.AdminPageTest"/>
+      </group> <!-- RegressionTesting -->
+      <group name="admin">
+        <method signature="AdminPageTest.addUserCredentails()[pri:2, instance:TestLayer.AdminPageTest@20ce78ec]" name="addUserCredentails" class="TestLayer.AdminPageTest"/>
+        <method signature="AdminPageTest.logoutFunctionality()[pri:3, instance:TestLayer.AdminPageTest@20ce78ec]" name="logoutFunctionality" class="TestLayer.AdminPageTest"/>
+        <method signature="AdminPageTest.validateAdminPage()[pri:1, instance:TestLayer.AdminPageTest@20ce78ec]" name="validateAdminPage" class="TestLayer.AdminPageTest"/>
+        <method signature="AdminPageTest.validateLoginFunctionality()[pri:4, instance:TestLayer.AdminPageTest@20ce78ec]" name="validateLoginFunctionality" class="TestLayer.AdminPageTest"/>
+      </group> <!-- admin -->
+      <group name="setup">
+        <method signature="LoginPageTest.setup()[pri:0, instance:TestLayer.LoginPageTest@7334aada]" name="setup" class="TestLayer.LoginPageTest"/>
+      </group> <!-- setup -->
+      <group name="login">
+        <method signature="LoginPageTest.validateLoginFunctionality()[pri:0, instance:TestLayer.LoginPageTest@7334aada]" name="validateLoginFunctionality" class="TestLayer.LoginPageTest"/>
+      </group> <!-- login -->
+      <group name="home">
+        <method signature="HomePageTest.validateHomeTitle()[pri:2, instance:TestLayer.HomePageTest@384ad17b]" name="validateHomeTitle" class="TestLayer.HomePageTest"/>
+        <method signature="HomePageTest.validateHomeUrl()[pri:3, instance:TestLayer.HomePageTest@384ad17b]" name="validateHomeUrl" class="TestLayer.HomePageTest"/>
+        <method signature="HomePageTest.validateLogo()[pri:1, instance:TestLayer.HomePageTest@384ad17b]" name="validateLogo" class="TestLayer.HomePageTest"/>
+      </group> <!-- home -->
+    </groups>
+    <test started-at="2024-12-25T20:40:26 IST" name="Test" finished-at="2024-12-25T20:41:20 IST" duration-ms="53643">
+      <class name="TestLayer.HomePageTest">
+        <test-method signature="validateLogo()[pri:1, instance:TestLayer.HomePageTest@384ad17b]" started-at="2024-12-25T20:40:38 IST" name="validateLogo" description="Validate Home Page Logo Test Cases" depends-on-groups="login" finished-at="2024-12-25T20:40:39 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogo -->
+        <test-method signature="validateHomeTitle()[pri:2, instance:TestLayer.HomePageTest@384ad17b]" started-at="2024-12-25T20:40:39 IST" name="validateHomeTitle" description="Validate Home Page Title Test Cases" depends-on-groups="login" finished-at="2024-12-25T20:40:39 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomeTitle -->
+        <test-method signature="validateHomeUrl()[pri:3, instance:TestLayer.HomePageTest@384ad17b]" started-at="2024-12-25T20:40:39 IST" name="validateHomeUrl" depends-on-groups="login" finished-at="2024-12-25T20:40:39 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomeUrl -->
+      </class> <!-- TestLayer.HomePageTest -->
+      <class name="TestLayer.PIMPageTest">
+        <test-method signature="validatePimPage()[pri:1, instance:TestLayer.PIMPageTest@1d9b7cce]" started-at="2024-12-25T20:40:39 IST" name="validatePimPage" depends-on-groups="home" finished-at="2024-12-25T20:40:40 IST" duration-ms="1089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePimPage -->
+        <test-method signature="validateNewEmployee()[pri:2, instance:TestLayer.PIMPageTest@1d9b7cce]" started-at="2024-12-25T20:40:40 IST" name="validateNewEmployee" depends-on-groups="home" finished-at="2024-12-25T20:40:48 IST" duration-ms="8000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNewEmployee -->
+        <test-method signature="validateEmployeeInformation()[pri:3, instance:TestLayer.PIMPageTest@1d9b7cce]" started-at="2024-12-25T20:40:48 IST" name="validateEmployeeInformation" depends-on-groups="home" finished-at="2024-12-25T20:40:55 IST" duration-ms="7499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmployeeInformation -->
+        <test-method signature="validateSearchFunctionality()[pri:4, instance:TestLayer.PIMPageTest@1d9b7cce]" started-at="2024-12-25T20:40:55 IST" name="validateSearchFunctionality" depends-on-groups="home" finished-at="2024-12-25T20:41:02 IST" duration-ms="6722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchFunctionality -->
+      </class> <!-- TestLayer.PIMPageTest -->
+      <class name="TestLayer.LoginPageTest">
+        <test-method signature="setup()[pri:0, instance:TestLayer.LoginPageTest@7334aada]" started-at="2024-12-25T20:40:26 IST" name="setup" finished-at="2024-12-25T20:40:30 IST" duration-ms="3521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateLoginFunctionality()[pri:0, instance:TestLayer.LoginPageTest@7334aada]" started-at="2024-12-25T20:40:30 IST" name="validateLoginFunctionality" depends-on-groups="setup" finished-at="2024-12-25T20:40:38 IST" duration-ms="8697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginFunctionality -->
+      </class> <!-- TestLayer.LoginPageTest -->
+      <class name="TestLayer.AdminPageTest">
+        <test-method signature="validateAdminPage()[pri:1, instance:TestLayer.AdminPageTest@20ce78ec]" started-at="2024-12-25T20:41:02 IST" name="validateAdminPage" depends-on-groups="pim" finished-at="2024-12-25T20:41:03 IST" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAdminPage -->
+        <test-method signature="addUserCredentails()[pri:2, instance:TestLayer.AdminPageTest@20ce78ec]" started-at="2024-12-25T20:41:03 IST" name="addUserCredentails" depends-on-groups="pim" finished-at="2024-12-25T20:41:17 IST" duration-ms="13913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserCredentails -->
+        <test-method signature="logoutFunctionality()[pri:3, instance:TestLayer.AdminPageTest@20ce78ec]" started-at="2024-12-25T20:41:17 IST" name="logoutFunctionality" depends-on-groups="pim" finished-at="2024-12-25T20:41:18 IST" duration-ms="1119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFunctionality -->
+        <test-method signature="validateLoginFunctionality()[pri:4, instance:TestLayer.AdminPageTest@20ce78ec]" started-at="2024-12-25T20:41:18 IST" name="validateLoginFunctionality" depends-on-groups="pim" finished-at="2024-12-25T20:41:20 IST" duration-ms="1708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginFunctionality -->
+      </class> <!-- TestLayer.AdminPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
