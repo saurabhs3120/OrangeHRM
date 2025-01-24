@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test2 (failed)">
-    <parameter name="browsername" value="chrome"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="RegressionTesting"/>
+      </run>
+    </groups>
     <classes>
-      <class name="TestLayer.DemoOrangeHRMTest">
+      <class name="TestLayer.AdminPageTest">
         <methods>
-          <include name="validateAddMoreEmployeeDetails"/>
-          <include name="validateSearchEmployee"/>
+          <include name="validateLoginFunctionality"/>
         </methods>
-      </class> <!-- TestLayer.DemoOrangeHRMTest -->
+      </class> <!-- TestLayer.AdminPageTest -->
+      <class name="TestLayer.HomePageTest">
+        <methods>
+          <include name="validateHomeUrl"/>
+          <include name="validateHomeTitle"/>
+          <include name="validateLogo"/>
+        </methods>
+      </class> <!-- TestLayer.HomePageTest -->
+      <class name="TestLayer.PIMPageTest">
+        <methods>
+          <include name="validateEmployeeInformation"/>
+          <include name="validatePimPage"/>
+          <include name="validateSearchFunctionality"/>
+          <include name="validateNewEmployee"/>
+        </methods>
+      </class> <!-- TestLayer.PIMPageTest -->
+      <class name="TestLayer.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="validateLoginFunctionality"/>
+        </methods>
+      </class> <!-- TestLayer.LoginPageTest -->
     </classes>
-  </test> <!-- Test2 (failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

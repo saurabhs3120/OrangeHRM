@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\praf0\OneDrive\Desktop\Automation Batch 9th Nov 2024\UI Automation Framework\Hybrid Framework\Hybrid Framework Workspace\OrangeHrmApplication\testng.xml</span>
+                    <span>C:\Users\khanf\git\OrangeHRM\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestLayer.AdminPageTest" class="method navigator-link" hash-for-method="validateLoginFunctionality">validateLoginFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -144,11 +158,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestLayer.AdminPageTest" class="method navigator-link" hash-for-method="validateLoginFunctionality">validateLoginFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestLayer.HomePageTest" class="method navigator-link" hash-for-method="validateLogo">validateLogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -179,6 +188,112 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestLayer.AdminPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLoginFunctionality">
+                  </a> <!-- validateLoginFunctionality -->
+                  <span class="method-name">validateLoginFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
+  (Session info: chrome=131.0.6778.265)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eef9da62d1fe042cea074c0f53e8fe52, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\khanf\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56411}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56411/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eef9da62d1fe042cea074c0f53e8fe52
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at UtilityLayer.WebElementUtils.sendKeys(WebElementUtils.java:14)
+	at PageLayer.LoginPage.loginFunctionality(LoginPage.java:34)
+	at TestLayer.AdminPageTest.validateLoginFunctionality(AdminPageTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestLayer.AdminPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUserCredentails">
+                  </a> <!-- addUserCredentails -->
+                  <span class="method-name">addUserCredentails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutFunctionality">
+                  </a> <!-- logoutFunctionality -->
+                  <span class="method-name">logoutFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAdminPage">
+                  </a> <!-- validateAdminPage -->
+                  <span class="method-name">validateAdminPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestLayer.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHomeTitle">
+                  </a> <!-- validateHomeTitle -->
+                  <span class="method-name">validateHomeTitle</span>
+                  <em>
+(Validate Home Page Title Test Cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHomeUrl">
+                  </a> <!-- validateHomeUrl -->
+                  <span class="method-name">validateHomeUrl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogo">
+                  </a> <!-- validateLogo -->
+                  <span class="method-name">validateLogo</span>
+                  <em>
+(Validate Home Page Logo Test Cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -237,79 +352,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestLayer.AdminPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addUserCredentails">
-                  </a> <!-- addUserCredentails -->
-                  <span class="method-name">addUserCredentails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="logoutFunctionality">
-                  </a> <!-- logoutFunctionality -->
-                  <span class="method-name">logoutFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateAdminPage">
-                  </a> <!-- validateAdminPage -->
-                  <span class="method-name">validateAdminPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateLoginFunctionality">
-                  </a> <!-- validateLoginFunctionality -->
-                  <span class="method-name">validateLoginFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestLayer.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateHomeTitle">
-                  </a> <!-- validateHomeTitle -->
-                  <span class="method-name">validateHomeTitle</span>
-                  <em>
-(Validate Home Page Title Test Cases)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateHomeUrl">
-                  </a> <!-- validateHomeUrl -->
-                  <span class="method-name">validateHomeUrl</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateLogo">
-                  </a> <!-- validateLogo -->
-                  <span class="method-name">validateLogo</span>
-                  <em>
-(Validate Home Page Logo Test Cases)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\praf0\OneDrive\Desktop\Automation Batch 9th Nov 2024\UI Automation Framework\Hybrid Framework\Hybrid Framework Workspace\OrangeHrmApplication\testng.xml</span>
+            <span class="header-content">C:\Users\khanf\git\OrangeHRM\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -495,62 +541,62 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addUserCredentails')
+data.setCell(0, 1, 'validateLoginFunctionality')
 data.setCell(0, 2, 'TestLayer.AdminPageTest')
-data.setCell(0, 3, 13913);
+data.setCell(0, 3, 30021);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateLoginFunctionality')
-data.setCell(1, 2, 'TestLayer.LoginPageTest')
-data.setCell(1, 3, 8697);
+data.setCell(1, 1, 'addUserCredentails')
+data.setCell(1, 2, 'TestLayer.AdminPageTest')
+data.setCell(1, 3, 13581);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateNewEmployee')
-data.setCell(2, 2, 'TestLayer.PIMPageTest')
-data.setCell(2, 3, 8000);
+data.setCell(2, 1, 'setup')
+data.setCell(2, 2, 'TestLayer.LoginPageTest')
+data.setCell(2, 3, 12415);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validateEmployeeInformation')
 data.setCell(3, 2, 'TestLayer.PIMPageTest')
-data.setCell(3, 3, 7499);
+data.setCell(3, 3, 7054);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateSearchFunctionality')
+data.setCell(4, 1, 'validateNewEmployee')
 data.setCell(4, 2, 'TestLayer.PIMPageTest')
-data.setCell(4, 3, 6722);
+data.setCell(4, 3, 6961);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'setup')
-data.setCell(5, 2, 'TestLayer.LoginPageTest')
-data.setCell(5, 3, 3521);
+data.setCell(5, 1, 'validateSearchFunctionality')
+data.setCell(5, 2, 'TestLayer.PIMPageTest')
+data.setCell(5, 3, 6265);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'validateLoginFunctionality')
-data.setCell(6, 2, 'TestLayer.AdminPageTest')
-data.setCell(6, 3, 1708);
+data.setCell(6, 2, 'TestLayer.LoginPageTest')
+data.setCell(6, 3, 1821);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'logoutFunctionality')
-data.setCell(7, 2, 'TestLayer.AdminPageTest')
-data.setCell(7, 3, 1119);
+data.setCell(7, 1, 'validatePimPage')
+data.setCell(7, 2, 'TestLayer.PIMPageTest')
+data.setCell(7, 3, 954);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validatePimPage')
-data.setCell(8, 2, 'TestLayer.PIMPageTest')
-data.setCell(8, 3, 1089);
+data.setCell(8, 1, 'logoutFunctionality')
+data.setCell(8, 2, 'TestLayer.AdminPageTest')
+data.setCell(8, 3, 948);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'validateAdminPage')
 data.setCell(9, 2, 'TestLayer.AdminPageTest')
-data.setCell(9, 3, 861);
+data.setCell(9, 3, 870);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'validateLogo')
 data.setCell(10, 2, 'TestLayer.HomePageTest')
-data.setCell(10, 3, 403);
+data.setCell(10, 3, 387);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'validateHomeTitle')
 data.setCell(11, 2, 'TestLayer.HomePageTest')
-data.setCell(11, 3, 17);
+data.setCell(11, 3, 10);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'validateHomeUrl')
 data.setCell(12, 2, 'TestLayer.HomePageTest')
-data.setCell(12, 3, 16);
+data.setCell(12, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -583,60 +629,62 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateLoginFunctionality</span>
-                <span class="method-start">3526 ms</span>
+                <span class="method-start">12425 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestLayer.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validateLogo</span>
-                <span class="method-start">12225 ms</span>
+                <span class="method-start">14247 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateHomeTitle</span>
-                <span class="method-start">12630 ms</span>
+                <span class="method-start">14635 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateHomeUrl</span>
-                <span class="method-start">12648 ms</span>
+                <span class="method-start">14648 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestLayer.PIMPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validatePimPage</span>
-                <span class="method-start">12665 ms</span>
+                <span class="method-start">14649 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateNewEmployee</span>
-                <span class="method-start">13757 ms</span>
+                <span class="method-start">15605 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateEmployeeInformation</span>
-                <span class="method-start">21768 ms</span>
+                <span class="method-start">22578 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateSearchFunctionality</span>
-                <span class="method-start">29269 ms</span>
+                <span class="method-start">29636 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestLayer.AdminPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validateAdminPage</span>
-                <span class="method-start">35993 ms</span>
+                <span class="method-start">35906 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addUserCredentails</span>
-                <span class="method-start">36855 ms</span>
+                <span class="method-start">36779 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logoutFunctionality</span>
-                <span class="method-start">50776 ms</span>
+                <span class="method-start">50362 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validateLoginFunctionality</span>
-                <span class="method-start">51898 ms</span>
+                <span class="method-start">51312 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
